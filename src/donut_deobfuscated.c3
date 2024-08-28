@@ -1,5 +1,6 @@
 /* based on donut_deobfuscated.c */
 import std::math;
+import std::thread;
 import std::io;
 
 fn void main() {
@@ -41,5 +42,6 @@ fn void main() {
             a += 0.00004;
             b += 0.00002;
         }
+        thread::sleep_ms(30);
     }
 }
